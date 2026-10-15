@@ -1,6 +1,6 @@
 var WA_NUMBER="628132992806"; /* isi nomor WhatsApp band, format 62812xxxxxxx */
 var photos={"diki": "images/members/diki.jpg", "hgm": "images/members/hgm.jpg", "novard": "images/members/novard.jpg", "rian": "images/members/rian.jpg", "teddy": "images/members/teddy.jpg", "tyar": "images/members/tyar.jpg"};
-var members=[["Novard","Guitar","novard"],["Diki","Guitar","diki"],["HGM","Bass","hgm"],["Teddy","Drum","teddy"],["Rian","Vocal","rian"],["Tyar","Keyboard · Guest","tyar"]];
+var members=[["Novard","Guitar","novard"],["Diki","Guitar","diki"],["HGM","Bass","hgm"],["Teddy","Drum","teddy"],["Rian","Vocal","rian"],["Tyar","Keyboard","tyar"]];
 var shows=[["2026-10-21","Wed<br>21 Oct 2026","57 Coffee House","20.00–23.00"],["2026-10-13","Mon<br>13 Oct 2026","57 Coffee House","20.00–23.00"],["2026-10-03","Sat<br>3 Oct 2026","OK Coffee","19.30–23.00"]];
 function $(i){return document.getElementById(i)}
 function mk(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
