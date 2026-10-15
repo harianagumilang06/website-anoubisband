@@ -1,11 +1,11 @@
 var WA_NUMBER="628132992806"; /* isi nomor WhatsApp band, format 62812xxxxxxx */
-var photos={"diki": "images/members/diki.jpg", "hgm": "images/members/hgm.jpg", "novard": "images/members/novard.jpg", "rian": "images/members/rian.jpg", "teddy": "images/members/teddy.jpg"};
-var members=[["Novard","Guitar","novard"],["Diki","Guitar","diki"],["HGM","Bass","hgm"],["Teddy","Drum","teddy"],["Rian","Vocal","rian"]];
-var shows=[["2026-10-13","Mon<br>13 Oct 2026","57 Coffee House","Time to be announced"],["2026-10-03","Sat<br>3 Oct 2026","OK Coffee","19.30–23.00"]];
+var photos={"diki": "images/members/diki.jpg", "hgm": "images/members/hgm.jpg", "novard": "images/members/novard.jpg", "rian": "images/members/rian.jpg", "teddy": "images/members/teddy.jpg", "tyar": "images/members/tyar.jpg"};
+var members=[["Novard","Guitar","novard"],["Diki","Guitar","diki"],["HGM","Bass","hgm"],["Teddy","Drum","teddy"],["Rian","Vocal","rian"],["Tyar","Keyboard · Guest","tyar"]];
+var shows=[["2026-10-21","Wed<br>21 Oct 2026","57 Coffee House","20.00–23.00"],["2026-10-13","Mon<br>13 Oct 2026","57 Coffee House","20.00–23.00"],["2026-10-03","Sat<br>3 Oct 2026","OK Coffee","19.30–23.00"]];
 function $(i){return document.getElementById(i)}
 function mk(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
 var ml=$('ml');
-members.forEach(function(m){var a=document.createElement('article');
+members.forEach(function(m){var a=document.createElement('article');if(m[1].indexOf('Guest')>-1)a.className='guest';
  a.innerHTML='<div class="oval">'+m[0].charAt(0)+'<img src="'+photos[m[2]]+'" alt="'+m[0]+' - '+m[1]+'"></div><h3>'+m[0]+'</h3><p>'+m[1]+'</p>';ml.appendChild(a)});
 var ev=$('ev'),today=new Date().toISOString().slice(0,10),up=false;
 shows.forEach(function(s){var past=s[0]<today;if(!past)up=true;var d=document.createElement('div');d.className='tk'+(past?' past':'');
